@@ -18,7 +18,7 @@ const App = () => {
     const fetchWeather = async () => {
         if (!city.trim()) return alert("Enter a city name!");
         try {
-            const response = await axios.get(`http://weather-app-mern-stack-delta.vercel.app/weather/${city}`);
+            const response = await axios.get(`https://weather-app-mern-stack-delta.vercel.app/weather/${city}`);
             setWeather(response.data);
             setError("");
         } catch (err) {
